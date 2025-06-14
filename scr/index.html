@@ -8,27 +8,61 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1 class="text-3xl font-bold">Welcome to My Website</h1>
-        <nav>
-            <ul class="flex space-x-4">
+<body class="bg-gradient-to-r from-maroon-500 to-pink-500 dark:bg-gray-900 transition-colors duration-500">
+    <header class="p-6 bg-white dark:bg-gray-800 shadow mb-8">
+        <h1 class="text-3xl font-bold text-center text-gray-900 dark:text-white">Welcome to My Website</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
                 <li><a href="#" class="text-blue-500 hover:underline">Home</a></li>
                 <li><a href="#" class="text-blue-500 hover:underline">About</a></li>
                 <li><a href="#" class="text-blue-500 hover:underline">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="p-4">
+    <main class="p-4 max-w-7xl mx-auto">
         <section>
-            <h2 class="text-2xl font-semibold">Latest Articles</h2>
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-100">Gallery</h2>
+            <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Example Card 1 -->
+                <div class="group rounded-lg shadow overflow-hidden bg-white dark:bg-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Nature 1" class="w-full h-60 object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-800 dark:text-gray-100 font-medium">Photo by John Doe</p>
+                    </div>
+                </div>
+                <!-- Example Card 2 -->
+                <div class="group rounded-lg shadow overflow-hidden bg-white dark:bg-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Nature 2" class="w-full h-60 object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-800 dark:text-gray-100 font-medium">Photo by Jane Smith</p>
+                    </div>
+                </div>
+                <!-- Example Card 3 -->
+                <div class="group rounded-lg shadow overflow-hidden bg-white dark:bg-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Nature 3" class="w-full h-60 object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-800 dark:text-gray-100 font-medium">Photo by Alex Lee</p>
+                    </div>
+                </div>
+                <!-- Example Card 4 -->
+                <div class="group rounded-lg shadow overflow-hidden bg-white dark:bg-gray-800 transition-transform duration-300 ease-in-out hover:scale-105 animate-fade-in">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Nature 4" class="w-full h-60 object-cover">
+                    <div class="p-4">
+                        <p class="text-gray-800 dark:text-gray-100 font-medium">Photo by Maria Garcia</p>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+        <section>
+            <h2 class="text-2xl font-semibold mt-12">Latest Articles</h2>
             <article class="mt-4">
                 <h3 class="text-xl font-medium">Article Title</h3>
                 <p class="text-gray-700">This is a brief description of the article. It provides an overview of the content.</p>
             </article>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white p-4">
+    <footer class="bg-gray-800 text-white p-4 text-center mt-8">
         <p>&copy; 2025 Pepper-Paray. All rights reserved.</p>
     </footer>
     <script src="app.js"></script>
